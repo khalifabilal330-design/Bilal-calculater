@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bilal Scientific Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="calculator">
+    <header class="top">
+      <div class="brand-block">
+        <h1 class="brand">Bilal</h1>
+        <p class="tag">Scientific</p>
+      </div>
+      <button id="angle" class="angle" type="button" aria-label="Toggle degrees and radians">DEG</button>
+    </header>
+
+    <section class="screen" aria-live="polite">
+      <div id="history" class="history"></div>
+      <output id="display" class="display">0</output>
+    </section>
+
+    <div class="keys" id="keys">
+      <button type="button" data-fn="sin">sin</button>
+      <button type="button" data-fn="cos">cos</button>
+      <button type="button" data-fn="tan">tan</button>
+      <button type="button" data-fn="log">log</button>
+      <button type="button" data-fn="ln">ln</button>
+
+      <button type="button" data-fn="asin">sin⁻¹</button>
+      <button type="button" data-fn="acos">cos⁻¹</button>
+      <button type="button" data-fn="atan">tan⁻¹</button>
+      <button type="button" data-fn="sqrt">√</button>
+      <button type="button" data-insert="^2">x²</button>
+
+      <button type="button" data-insert="^">xʸ</button>
+      <button type="button" data-insert="10^(">10ˣ</button>
+      <button type="button" data-insert="e^(">eˣ</button>
+      <button type="button" data-insert="!">n!</button>
+      <button type="button" data-insert="^(-1)">1/x</button>
+
+      <button type="button" data-insert="(">(</button>
+      <button type="button" data-insert=")">)</button>
+      <button type="button" data-const="π">π</button>
+      <button type="button" data-const="e">e</button>
+      <button type="button" data-insert="%">%</button>
+
+      <button type="button" data-digit="7">7</button>
+      <button type="button" data-digit="8">8</button>
+      <button type="button" data-digit="9">9</button>
+      <button type="button" data-action="del" class="muted">DEL</button>
+      <button type="button" data-action="clear" class="muted">AC</button>
+
+      <button type="button" data-digit="4">4</button>
+      <button type="button" data-digit="5">5</button>
+      <button type="button" data-digit="6">6</button>
+      <button type="button" data-op="*" class="op">×</button>
+      <button type="button" data-op="/" class="op">÷</button>
+
+      <button type="button" data-digit="1">1</button>
+      <button type="button" data-digit="2">2</button>
+      <button type="button" data-digit="3">3</button>
+      <button type="button" data-op="+" class="op">+</button>
+      <button type="button" data-op="-" class="op">−</button>
+
+      <button type="button" data-action="sign">±</button>
+      <button type="button" data-digit="0">0</button>
+      <button type="button" data-action="dot">.</button>
+      <button type="button" data-action="ans">Ans</button>
+      <button type="button" data-action="equals" class="op">=</button>
+    </div>
+  </main>
+  <script src="calculator.js"></script>
+</body>
+</html>
